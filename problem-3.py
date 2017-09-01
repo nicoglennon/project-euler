@@ -12,7 +12,7 @@ def prime_factors(number):
   largest_prime_factor = None
 
   # test if number divides by 2 (as many times as it does):
-  while number%2 == 0:
+  while number % 2 == 0:
     largest_prime_factor = 2
     number = number/2
 
@@ -27,5 +27,3 @@ def prime_factors(number):
     odd_divisor += 2
   # return the last (and thus largest) prime factor:
   return largest_prime_factor
-
-print(prime_factors(input))
