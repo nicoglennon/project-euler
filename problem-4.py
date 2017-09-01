@@ -26,8 +26,8 @@ def largest_palindrome_product(number_of_digits):
     # set the outer index i to the starting_num
     i = starting_num
     while i > 1:
-        # set the inner index j to the starting_num
-        j= starting_num
+        # set the inner index j to i (to avoid repetition, this number decreases with i)
+        j= i
         while j > 1:
             prod = i * j
             # efficiency: if at any point the product is less than or eq to the current largest_palindrome, drop the current loop
